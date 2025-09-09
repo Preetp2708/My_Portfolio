@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form For Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="login-page">
+    <header>
+        <div style="width:100%;max-width:480px;margin:40px auto 0 auto;text-align:center;">
+            <h1 style="margin-bottom:8px;" id="login-title">Login Page</h1>
+            <p style="color:#00707a;font-size:1.1em;">Welcome! Please, Enter your details below and access <br> My Portfolio..</p>
+        </div>
+    </header>
+    
+        <form action="Portfolio.html">
+
+        <div>
+            <label for="mail">
+                User E-mail :: 
+                <input type="email" id="mail" placeholder="Email" name="usermail">
+            </label>
+        </div>
+
+        <br>
+
+        <div>
+        <label for="pass">
+            User Password :: 
+            <input type="password" id="pass" placeholder="Password" name="userpass">
+        </label>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="age">
+                <input type="checkbox" name="Age" id="age" value="18+"> <!--write "checked"  to get by default on 
+                and use group like radio button-->
+                My Age 18+
+            </label>    
+        </div>
+
+        <br>
+
+        <div>
+            <label for="ch1">
+                Student
+                <input type="radio" name="person" id="ch1" value="Student" class="person">
+            </label>
+            <label for="ch2">
+                Profesior
+                <input type="radio" name="person" id="ch2" value="Profesior" class="person">
+            </label>
+            <label for="ch3">
+                Company
+                <input type="radio" name="person" id="ch3" value="Company" class="person">
+            </label>
+        </div>
+        <br>
+
+        <div>
+            <label for="experience">
+                Experience In IT Feild :: 
+                <input type="range" id="experience" min="0" max="20" name="year">
+            </label>
+        </div>
+        <br>
+        <div>
+           <label for="District">
+             Choose Your District :: 
+            <select name="District" id="District">
+                <option>Select Your District</option>
+                <option value="Surat">Surat</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Pune">Pune</option>
+            </select>
+           </label>
+        </div>
+
+        <br>
+
+        <div >
+            <label for="Skill" >
+                Add Your Skill ::
+                <textarea name="Skill" placeholder="Write Your Skill Here"></textarea>
+            </label>
+        </div>
+        <br>
+
+        <div id="submit-button">
+            <button>Submit</button>
+        </div>
+
+
+    </form>
+
+</body>
+</html>

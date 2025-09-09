@@ -1,0 +1,323 @@
+/* This Is For The Login Page.. */
+
+#login-page {
+    background: url('background1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+}
+#login-page::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(228, 244, 243, 0.7); /* Soft overlay for readability */
+    z-index: 0;
+}
+form, .form_container, #login-title, div {
+    position: relative;
+    z-index: 1;
+}
+.person:checked{
+    color: #00b6bc;
+}
+form{
+    animation: focus 2s cubic-bezier(.68,-0.55,.27,1.55) forwards;
+    transform-origin: center;
+    width: 420px;
+    min-height: 420px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    color: #00707a;
+    font-weight: 600;
+    text-align: left;
+    margin: 17.600px auto 0 auto;
+    align-items: start;
+    justify-items: stretch;
+    /* background: #fff; */
+    border: #85c2e0 dotted 4px;
+    border-radius: 18px;
+    /* box-shadow: 0 4px 24px 0 #a1dbf155; */
+    padding: 32px 32px 24px 32px;
+    position: relative;
+    background-image: url('background.jpg');
+    background-size: cover;
+}
+/* form:hover {
+    box-shadow: 10px 34px 34px 10px #a1dbf155;
+} */
+ 
+#submit-button {
+    width: 40%;
+    margin: auto auto;
+}
+form div{
+    width: 100%;
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    box-sizing: border-box;
+}
+form label {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
+}
+#login-title {
+    color: #5ab5d9;
+    text-decoration: underline;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: 2px solid #a1dbf1;
+    border-radius: 12px;
+}
+#login-title:hover {
+    color: #0b94e9;
+}
+form input[type="email"],
+form input[type="password"],
+form input[type="range"],
+form select,
+form textarea {
+    flex: 1;
+    padding: 8px 10px;
+    border: 1.5px solid #a1dbf1;
+    border-radius: 7px;
+    font-size: 1em;
+    background: #e4f4f3;
+    color: #00707a;
+    margin-left: 8px;
+    transition: border 0.2s, box-shadow 0.2s;
+    text-align: center;
+}
+form input[type="email"]:focus,
+form input[type="password"]:focus,
+form input[type="range"]:focus,
+form select:focus,
+form textarea:focus {
+    border: 1.5px solid #00b6bc;
+    outline: none;
+    box-shadow: 0 0 0 2px #a1dbf133;
+}
+form textarea {
+    min-height: 40px;
+    resize: vertical;
+}
+form input[type="checkbox"],
+form input[type="radio"] {
+    width: 18px;
+    height: 18px;
+    margin-right: 6px;
+}
+form button {
+    width: 100%;
+    margin: 18px 0 0 0;
+    font-size: 1.1em;
+    letter-spacing: 1px;
+    /* box-shadow: 0 2px 8px #a1dbf122; */
+}
+@keyframes focus {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+@media (orientation: portrait), (max-width: 600px) {
+    header {
+        width: 100%;
+        text-align: center;
+    }
+    header > div {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 auto !important;
+        padding: 12px 8px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+    form {
+        width: 100% !important;
+        max-width: 400px;
+        margin: 0 auto !important;
+        padding: 16px 8px 16px 8px !important;
+        box-sizing: border-box;
+    }
+    #submit-button {
+        /* width: 30%; */
+        margin: auto;
+    }
+}
+
+/* Portfolio Page */
+
+
+h1{
+    color: #00b6bc;
+    background-color: #e4f4f3;
+    text-align: center;
+    font-weight: 100;
+    font-size: 2.7pc;
+    letter-spacing: 5px;
+    font-family:'Courier New', Courier, monospace;
+}
+h1:hover{
+  color: #71d5e4;
+}
+
+p{
+    color: #00b6bc;
+    font-weight: 400;
+    line-height: 2ch;
+}
+
+b{
+    font-size:larger;
+}
+
+button{
+    color: #fff;
+    /* width: 20%; */
+    margin: auto;
+    background-color: #71d5e4;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 18px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: #00b6bc;
+    cursor: pointer;
+}
+
+img{
+    border-radius: 50%; 
+    border-width:5px; 
+    border-color: #a1dbf1; 
+    border-style: solid; 
+    padding: 3px; 
+    margin: 0 40px;
+    vertical-align: middle;
+}
+
+#photo:hover{
+    width: 300px;
+    height: 300px;
+    transition: 1s;
+}
+
+video{
+    border-radius: 50%; 
+    object-fit: cover; 
+    border:5px; 
+    border-color: #a1dbf1; 
+    border-style: solid; 
+    padding: 3px;
+    margin: 0 40px; 
+    vertical-align: middle;
+}
+/* Navigation */
+
+#navi:hover{
+    font-size: large;
+    color: #00b6bc;
+}
+#navi:active{
+    color: #71d5e4;
+}
+
+h2{
+    color: #5ab5d9;
+    text-decoration:underline;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}
+
+h3{
+    color: #71d5e4;
+    text-decoration:underline;
+}
+
+video:hover{
+    width: 300px;
+    height: 300px;
+    transition: 1s;
+    }
+nav{
+    border: 3px solid #00b6bc;
+    background: #a1dbf1;
+    border-radius: 8px;
+}
+#navigation{
+    width: 90%;
+    /* height: 20px; */
+}
+ul{
+    color: #00b6bc;
+    padding: 0;
+}
+ul a{
+    margin: 10px;
+    display:flexbox;
+    justify-content: center;
+    align-items: center; 
+}
+
+section{
+    display: inline-block;
+    vertical-align: middle;
+    background: #e4f4f3;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px #a1dbf133;
+    margin-bottom: 18px;
+}
+#skills{
+border: 3px solid #71d5e4;
+    background: #a1dbf1;
+    margin: 0 20px;
+    padding-left: 20px;
+}
+
+#skills ul, #skills li {
+    color: #00707a;
+    font-weight: bold;
+}
+#profile{
+    border: 3px solid #00b6bc;
+    background: #71d5e4;
+    margin: 0 100px;
+    padding-left: 20px;
+}
+#education{
+    border: 3px solid #a1dbf1;
+    background: #e4f4f3;
+    margin: 0 20px;
+}
+#language{
+    width: 10%;
+    margin-left: 2.5%;
+    padding-left: 20px;
+    border: #a1dbf1;
+    border-style: solid;
+    border-width: 3px;
+    vertical-align: middle;
+    margin-bottom: 0%;
+}
+.contact{
+    border: #a1dbf1;
+    border-style: solid;
+    border-width: 3px;
+    width: 20%;
+    border-radius: 12px;
+    margin-left: 44%;
+    padding-left: 20px;
+    background: #e4f4f3;
+}
+.link:hover{
+    color: #00707a;
+}
